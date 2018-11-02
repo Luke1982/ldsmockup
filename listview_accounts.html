@@ -602,9 +602,14 @@ if (typeof(Storage) !== "undefined") {
                     <div class="slds-page-header__control">
                         <ul class="slds-button-group-list">
                             <li>
-                                <button class="slds-button slds-button_neutral">Add Account</button>
+                                <button class="slds-button slds-button_success">
+                                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+                                    </svg>
+                                    Add Account
+                                </button>
                             </li>
-                            <li>
+<!--                             <li>
                                 <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
                                     <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="More Actions">
                                         <svg class="slds-button__icon" aria-hidden="true">
@@ -613,7 +618,7 @@ if (typeof(Storage) !== "undefined") {
                                         <span class="slds-assistive-text">More Actions</span>
                                     </button>
                                 </div>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </div>
