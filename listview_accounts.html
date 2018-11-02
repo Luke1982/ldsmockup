@@ -628,19 +628,56 @@ if (typeof(Storage) !== "undefined") {
                     <div class="slds-page-header__control">
                         <ul class="slds-button-group-list">
                             <li>
+                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Create filter">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#filterList" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Create filter</span>
+                                </button>
+                            </li>
+                            <li>
+                                <div class="slds-form-element">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-01">
+                                            <option value="">All</option>
+                                            <option>New this week</option>
+                                            <option>Prospect accounts</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Create filter">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#add" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Create filter</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Edit filter">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#edit" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Edit filter</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Delete filter">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#delete" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Delete filter</span>
+                                </button>
+                            </li>
+                        </ul>
+                        <ul class="slds-button-group-list">
+                            <li>
                                 <button class="slds-button slds-button_icon slds-button_icon-border" title="Search">
                                     <svg class="slds-button__icon" aria-hidden="true">
                                         <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#search" xmlns:xlink="http://www.w3.org/1999/xlink" />
                                     </svg>
                                     <span class="slds-assistive-text">Search</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Filter List">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#filterList" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Filter List</span>
                                 </button>
                             </li>
                             <li>
