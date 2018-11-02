@@ -70,7 +70,7 @@ if (typeof(Storage) !== "undefined") {
 }
 </script>
 
-<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class=small style="background-color: rgb(6, 28, 63)"> <a name="top"></a>
+<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class=small style="background-color: #616870"> <a name="top"></a>
     <script type="text/javascript" src="include/sw-precache/service-worker-registration.js"></script>
     <script type="text/javascript" src="include/jquery/jquery.js"></script>
     <script type="text/javascript" src="include/jquery/jquery-ui.js"></script>
@@ -725,6 +725,19 @@ if (typeof(Storage) !== "undefined") {
     </div>
     <!-- Content table -->
     <div style="margin: 1rem;border-radius: 4px; border-color: #97a1a7; overflow: hidden;">
+        <div class="demo-only" style="padding: 0.5rem; background: #808fa0 none repeat scroll 0% 0%;">
+          <div class="slds-button-group" role="group">
+            <button class="slds-button slds-button_destructive">
+                <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                    <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+                </svg>
+                Delete
+            </button>
+            <button class="slds-button slds-button_inverse">Mass edit</button>
+            <button class="slds-button slds-button_inverse">Send mailer export</button>
+            <button class="slds-button slds-button_inverse">Send SMS</button>
+          </div>
+        </div>
         <table aria-multiselectable="true" class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols" role="grid">
             <thead>
                 <tr class="slds-line-height_reset">
@@ -2293,7 +2306,7 @@ if (typeof(Storage) !== "undefined") {
     var Document_Folder_View = 0;
     </script>
     <script type="text/javascript" src="modules/Accounts/Accounts.js"></script>
-    <TABLE id="LB_buttonlist" border=0 cellspacing=0 cellpadding=0 width=100% class=small>
+<!--     <TABLE id="LB_buttonlist" border=0 cellspacing=0 cellpadding=0 width=100% class=small>
         <tr>
             <td style="height:2px"></td>
         </tr>
@@ -2353,20 +2366,20 @@ if (typeof(Storage) !== "undefined") {
             <td style="height:2px"></td>
         </tr>
     </TABLE>
-    <div id="searchingUI" style="display:none;">
+ -->    <div id="searchingUI" style="display:none;">
         <table border=0 cellspacing=0 cellpadding=0 width=100%>
             <tr>
                 <td align=center> <img src="themes/images/searching.gif" alt="Searching... please wait" title="Searching... please wait"> </td>
             </tr>
         </table>
     </div>
-    </td>
+<!--     </td>
     </tr>
     </table>
     </td>
     </tr>
-    </table>
-    <table border=0 cellspacing=0 cellpadding=0 width=98% align=center>
+    </table> -->
+<!--     <table border=0 cellspacing=0 cellpadding=0 width=98% align=center>
         <tr>
             <td valign=top><img src="themes/softed/images/showPanelTopLeft.gif"></td>
             <td class="showPanelBg" valign="top" width=100% style="padding:10px;">
@@ -2831,7 +2844,7 @@ if (typeof(Storage) !== "undefined") {
             <td valign=top><img src="themes/softed/images/showPanelTopRight.gif"></td>
         </tr>
     </table>
-    <div id="massedit" class="layerPopup" style="display:none;width:80%;">
+ -->    <div id="massedit" class="layerPopup" style="display:none;width:80%;">
         <table width="100%" border="0" cellpadding="3" cellspacing="0" class="layerHeadingULine">
             <tr>
                 <td class="layerPopupHeading" align="left" width="60%">Mass Edit - Records Fields</td>
@@ -2873,13 +2886,13 @@ if (typeof(Storage) !== "undefined") {
         <div id="sendmail_cont" style="z-index:100001;position:absolute;"></div>
     </form>
     <script type="text/javascript" src="include/ckeditor/ckeditor.js"></script>
-    <br><br><br>
+<!--     <br><br><br>
     <table border=0 cellspacing=0 cellpadding=5 width=100% class=settingsSelectedUI>
         <tr>
             <td class=small align=left><span style='color: rgb(153, 153, 153);'>coreBOS <span id='_vtiger_product_version_'>7.0</span></span></td>
             <td class=small align=right><span>&copy; 2004-2018 <a href='http://corebos.org' target='_blank'>coreBOS</a></span></td>
         </tr>
-    </table>
+    </table> -->
     <script type='text/javascript'>
     if (typeof(ActivityReminderCallback) != 'undefined') window.setTimeout(function() {
         ActivityReminderCallback();
