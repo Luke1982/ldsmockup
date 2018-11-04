@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="include/LD/assets/styles/slds-combobox.css" type="text/css" />
     <link rel="stylesheet" href="include/LD/assets/styles/mainmenu.css" type="text/css" />
     <link rel="stylesheet" href="include/LD/assets/styles/override_lds.css" type="text/css" />
+    <link rel="stylesheet" href="include/style.css" type="text/css" />
     <style type="text/css">
     div.fixedLay1 {
         position: fixed;
@@ -70,7 +71,7 @@ if (typeof(Storage) !== "undefined") {
 }
 </script>
 
-<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class=small style="background-color: rgb(244, 246, 249);"> <a name="top"></a>
+<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class="small cbds-bg-blue--gray"> <a name="top"></a>
     <script type="text/javascript" src="include/sw-precache/service-worker-registration.js"></script>
     <script type="text/javascript" src="include/jquery/jquery.js"></script>
     <script type="text/javascript" src="include/jquery/jquery-ui.js"></script>
@@ -480,8 +481,9 @@ if (typeof(Storage) !== "undefined") {
                         <div class="slds-page-header__name">
                             <div class="slds-page-header__name-title">
                                 <h1>
-                            <span class="slds-page-header__title slds-truncate" title="Accounts">Accounts</span>
-                            </h1>
+                                    <span class="slds-page-header__title slds-truncate" title="Accounts">Accounts</span>
+                                </h1>
+                                <span>10 items • sorted by account no</span>
                             </div>
                         </div>
                     </div>
@@ -490,6 +492,57 @@ if (typeof(Storage) !== "undefined") {
             <div class="slds-page-header__col-actions">
                 <div class="slds-page-header__controls">
                     <div class="slds-page-header__control">
+                        <ul class="slds-button-group-list">
+                            <li>
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Import">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#pop_in" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Import</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Export">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#new_window" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Export</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Deduplicate">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#copy" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Deduplicate</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Tools">
+                                    <svg class="slds-button__icon" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#custom_apps" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                    </svg>
+                                    <span class="slds-assistive-text">Tools</span>
+                                </button>
+                            </li>
+                            <li>
+                                <button class="slds-button slds-button_success">
+                                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
+                                    </svg>
+                                    Add Account
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slds-page-header__row slds-page-header__row_gutters">
+            <div class="slds-page-header__col-details">
+                <ul class="slds-page-header__detail-row">
+                    <li class="slds-page-header__detail-block">
+                        <div class="slds-text-title slds-truncate" title="Search Accounts">Search Accounts</div>
                         <label class="slds-form-element__label slds-assistive-text" for="combobox-id-1">Search Accounts</label>
                         <div class="slds-form-element__control slds-p-vertical_xxx-small">
                             <div class="slds-combobox-group">
@@ -597,49 +650,11 @@ if (typeof(Storage) !== "undefined") {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="slds-page-header__control">
+                        </div>                       
+                    </li>
+                    <li class="slds-page-header__detail-block">
+                        <div class="slds-text-title slds-truncate" title="Filter Accounts">Filter Accounts</div>
                         <ul class="slds-button-group-list">
-                            <li>
-                                <button class="slds-button slds-button_success">
-                                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#add"></use>
-                                    </svg>
-                                    Add Account
-                                </button>
-                            </li>
-<!--                             <li>
-                                <div class="slds-dropdown-trigger slds-dropdown-trigger_click">
-                                    <button class="slds-button slds-button_icon slds-button_icon-border-filled" aria-haspopup="true" title="More Actions">
-                                        <svg class="slds-button__icon" aria-hidden="true">
-                                            <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#down" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                        </svg>
-                                        <span class="slds-assistive-text">More Actions</span>
-                                    </button>
-                                </div>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slds-page-header__row">
-            <div class="slds-page-header__col-meta">
-                <p class="slds-page-header__meta-text">10 items • sorted by account no</p>
-            </div>
-            <div class="slds-page-header__col-controls">
-                <div class="slds-page-header__controls">
-                    <div class="slds-page-header__control">
-                        <ul class="slds-button-group-list">
-                            <li>
-                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Create filter">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#filterList" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Create filter</span>
-                                </button>
-                            </li>
                             <li>
                                 <div class="slds-form-element">
                                     <div class="slds-select_container">
@@ -652,7 +667,7 @@ if (typeof(Storage) !== "undefined") {
                                 </div>
                             </li>
                             <li>
-                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Create filter">
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Create filter">
                                     <svg class="slds-button__icon" aria-hidden="true">
                                         <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#add" xmlns:xlink="http://www.w3.org/1999/xlink" />
                                     </svg>
@@ -660,7 +675,7 @@ if (typeof(Storage) !== "undefined") {
                                 </button>
                             </li>
                             <li>
-                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Edit filter">
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Edit filter">
                                     <svg class="slds-button__icon" aria-hidden="true">
                                         <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#edit" xmlns:xlink="http://www.w3.org/1999/xlink" />
                                     </svg>
@@ -668,7 +683,7 @@ if (typeof(Storage) !== "undefined") {
                                 </button>
                             </li>
                             <li>
-                                <button style="background-color:#4a4c56" class="slds-button slds-button_icon slds-button_icon-border slds-button_icon-inverse" title="Delete filter">
+                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Delete filter">
                                     <svg class="slds-button__icon" aria-hidden="true">
                                         <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#delete" xmlns:xlink="http://www.w3.org/1999/xlink" />
                                     </svg>
@@ -676,56 +691,14 @@ if (typeof(Storage) !== "undefined") {
                                 </button>
                             </li>
                         </ul>
-                        <ul class="slds-button-group-list">
-                            <li>
-                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Search">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#search" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Search</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Import">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#pop_in" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Import</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Export">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#new_window" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Export</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Deduplicate">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#copy" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Deduplicate</span>
-                                </button>
-                            </li>
-                            <li>
-                                <button class="slds-button slds-button_icon slds-button_icon-border" title="Tools">
-                                    <svg class="slds-button__icon" aria-hidden="true">
-                                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#custom_apps" xmlns:xlink="http://www.w3.org/1999/xlink" />
-                                    </svg>
-                                    <span class="slds-assistive-text">Tools</span>
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    </li>                    
+                </ul>
             </div>
         </div>
     </div>
     <!-- Content table -->
     <div style="margin: 1rem;border-radius: 4px; border-color: #97a1a7; overflow: hidden; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);">
-        <div class="demo-only" style="padding: 0.5rem; background: #808fa0 none repeat scroll 0% 0%;">
+        <div class="cbds-bg-blue--light" style="padding: 0.5rem;">
           <div class="slds-button-group" role="group">
             <button class="slds-button slds-button_destructive">
                 <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
