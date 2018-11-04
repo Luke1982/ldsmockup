@@ -71,7 +71,7 @@ if (typeof(Storage) !== "undefined") {
 }
 </script>
 
-<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class="small cbds-bg-blue--gray"> <a name="top"></a>
+<body leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 class="small cbds-bg-compl-grey--light"> <a name="top"></a>
     <script type="text/javascript" src="include/sw-precache/service-worker-registration.js"></script>
     <script type="text/javascript" src="include/jquery/jquery.js"></script>
     <script type="text/javascript" src="include/jquery/jquery-ui.js"></script>
@@ -466,7 +466,7 @@ if (typeof(Storage) !== "undefined") {
     </header>
     <div style="height: 90px; width: 1px;"></div>
     <!-- Page header -->
-    <div class="slds-page-header slds-page-header_related-list" style="margin: 1rem;">
+    <div class="slds-page-header slds-page-header_related-list cbds-bg-white" style="margin: 1rem;">
         <div class="slds-page-header__row">
             <div class="slds-page-header__col-title">
                 <div class="slds-media">
@@ -691,25 +691,57 @@ if (typeof(Storage) !== "undefined") {
                                 </button>
                             </li>
                         </ul>
-                    </li>                    
+                    </li>                
                 </ul>
             </div>
         </div>
     </div>
     <!-- Content table -->
-    <div style="margin: 1rem;border-radius: 4px; border-color: #97a1a7; overflow: hidden; box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1);">
-        <div class="cbds-bg-blue--light" style="padding: 0.5rem;">
-          <div class="slds-button-group" role="group">
-            <button class="slds-button slds-button_destructive">
-                <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
-                    <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
-                </svg>
-                Delete
-            </button>
-            <button class="slds-button slds-button_inverse">Mass edit</button>
-            <button class="slds-button slds-button_inverse">Send mailer export</button>
-            <button class="slds-button slds-button_inverse">Send SMS</button>
-          </div>
+    <div class="cbds-shadow-c--small" style="margin: 1rem;border-radius: 4px; overflow: hidden;">
+        <div class="cbds-bg-blue--dark" style="padding: 0.5rem;">
+            <div class="slds-button-group" role="group">
+                <button class="slds-button slds-button_destructive">
+                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
+                    </svg>
+                    Delete
+                </button>
+                <button class="slds-button slds-button_inverse">
+                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#mark_all_as_read"></use>
+                    </svg>
+                    Mass edit
+                </button>
+                <button class="slds-button slds-button_inverse">
+                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#email"></use>
+                    </svg>
+                    Send mailer export
+                </button>
+                <button class="slds-button slds-button_inverse">
+                    <svg class="slds-button__icon slds-button__icon_left" aria-hidden="true">
+                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#send"></use>
+                    </svg>
+                    Send SMS
+                </button>
+            </div>
+            <div class="slds-button-group slds-float_right">
+                <button class="slds-button slds-button_icon slds-button_icon-border cbds-bg-white" title="Previous">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#left" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                    </svg>
+                </button>
+                <div class="slds-form-element slds-border_top slds-border_bottom cbds-bg-white" style="height: 32px;">
+                  <div class="slds-form-element__control">
+                    <input id="text-input-id-1" size="3" class="slds-input slds-input_bare" type="text" value="1" />
+                  </div>
+                </div>
+                <button class="slds-button slds-button_icon slds-button_icon-border cbds-bg-white" title="Next">
+                    <svg class="slds-button__icon" aria-hidden="true">
+                        <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#right" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                    </svg>
+                </button>
+            </div>
         </div>
         <table aria-multiselectable="true" class="slds-table slds-table_bordered slds-table_fixed-layout slds-table_resizable-cols" role="grid">
             <thead>
