@@ -1582,7 +1582,7 @@ if (typeof(Storage) !== "undefined") {
                     </td>
                 </tr>
                 <tr aria-selected="false" class="slds-hint-parent">
-                    <td class="slds-text-align_right" role="gridcell">
+                    <td class="slds-text-align_right" role="gridcell">                       
                         <div class="slds-checkbox">
                             <input type="checkbox" name="options" id="checkbox-02" tabindex="-1" aria-labelledby="check-button-label-02 column-group-header" value="checkbox-02">
                             <label class="slds-checkbox__label" for="checkbox-02" id="check-button-label-02">
@@ -1626,6 +1626,67 @@ if (typeof(Storage) !== "undefined") {
                                     <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#delete"></use>
                                 </svg>
                                 <span class="slds-assistive-text">Delete</span>
+                            </button>
+                            <button class="slds-button slds-button_icon slds-button_icon-border-filled cbds-tooltip-parent" title="Filter List" aria-pressed="false">
+                                <svg class="slds-button__icon" aria-hidden="true">
+                                    <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#info"></use>
+                                </svg>
+                                <span class="slds-assistive-text">Info</span>
+                                <!-- Tooltip -->
+                                <div class="cbds-tooltip--listview slds-text-color_default">
+                                    <section aria-labelledby="panel-heading-id" class="slds-popover slds-popover_large slds-popover_panel slds-nubbin_bottom-right-corner" role="dialog">
+                                        <div class="slds-popover__header">
+                                            <header class="slds-media slds-media_center slds-m-bottom_small">
+                                                <span class="slds-icon_container slds-icon-standard-account slds-media__figure">
+                                                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                                        <use xlink:href="include/LD/assets/icons/standard-sprite/svg/symbols.svg#account" xmlns:xlink="http://www.w3.org/1999/xlink" />
+                                                    </svg>
+                                                </span>
+                                                <div class="slds-media__body">
+                                                    <h2 class="slds-text-heading_medium slds-hyphenate" id="panel-heading-id"><a href="javascript:void(0);">Tesla Motors</a></h2>
+                                                </div>
+                                            </header>
+                                            <footer class="slds-grid slds-wrap slds-grid_pull-padded">
+                                                <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+                                                    <dl>
+                                                        <dt>
+                                                            <p class="slds-text-title_caps slds-truncate" title="Billing Address">Billing Address</p>
+                                                        </dt>
+                                                        <dd>
+                                                            <p class="slds-truncate" title="3500 Deer Creek Rd.">3500 Deer Creek Rd.</p>
+                                                            <p class="slds-truncate" title="Palo Alto, CA 94304">Palo Alto, CA 94304</p>
+                                                        </dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+                                                    <dl>
+                                                        <dt>
+                                                            <p class="slds-text-title_caps slds-truncate" title="Phone">Phone</p>
+                                                        </dt>
+                                                        <dd><a href="javascript:void(0);">212-345-3485</a></dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+                                                    <dl>
+                                                        <dt>
+                                                            <p class="slds-text-title_caps slds-truncate" title="Website">Website</p>
+                                                        </dt>
+                                                        <dd><a href="javascript:void(0);">teslamotors.com</a></dd>
+                                                    </dl>
+                                                </div>
+                                                <div class="slds-p-horizontal_small slds-size_1-of-2 slds-p-bottom_x-small">
+                                                    <dl>
+                                                        <dt>
+                                                            <p class="slds-text-title_caps slds-truncate" title="Account Owner">Account Owner</p>
+                                                        </dt>
+                                                        <dd><a href="javascript:void(0);">Jeff Maguire</a></dd>
+                                                    </dl>
+                                                </div>
+                                            </footer>
+                                        </div>
+                                    </section>
+                                </div>
+                                <!-- // Tooltip -->                                 
                             </button>
                         </div>
                     </td>

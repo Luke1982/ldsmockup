@@ -216,6 +216,19 @@ a:hover {
     transform: translate3d(100%, 0, 0);
 }
 
+.cbds-tooltip--listview .slds-popover {
+	position: absolute;
+	top: -50%;
+	right: 0;
+	transform: translateY(-100%);
+	opacity: 0;
+	text-align: left;
+}
+
+.cbds-tooltip-parent:hover .slds-popover {
+	opacity: 1;
+}
+
 /* ---- CBDS animations ---- */
 /* -- Source: animate.css */
 
