@@ -223,10 +223,28 @@ a:hover {
 	transform: translateY(-100%);
 	opacity: 0;
 	text-align: left;
+	transition: opacity 100ms linear;
 }
 
 .cbds-tooltip-parent:hover .slds-popover {
 	opacity: 1;
+}
+
+.cbds-massedit {
+	position: absolute;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 100ms linear 0ms, z-index 0ms linear 100ms;
+	-moz-transition: opacity 100ms linear 0ms, z-index 0ms linear 100ms;
+	-webkit-transition: opacity 100ms linear 0ms, z-index 0ms linear 100ms;
+}
+
+.cbds-massedit--active {
+	opacity: 1;
+	z-index: 100000;
+	transition: opacity 150ms linear 50ms, z-index 0ms linear 0ms;
+	-moz-transition: opacity 150ms linear 50ms, z-index 0ms linear 0ms;
+	-webkit-transition: opacity 150ms linear 50ms, z-index 0ms linear 0ms;
 }
 
 /* ---- CBDS animations ---- */
