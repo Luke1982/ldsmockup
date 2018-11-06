@@ -3071,9 +3071,9 @@ if (typeof(Storage) !== "undefined") {
     </script>
     <!-- New Mass Edit -->
     <div class="cbds-massedit" id="cbds-massedit">
-        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+        <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_medium">
             <div class="slds-modal__container">
-                <header class="slds-modal__header">
+                <header class="slds-modal__header cbds-bg-blue--gray slds-text-color_inverse">
                     <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick="document.getElementById('cbds-massedit').classList.remove('cbds-massedit--active');">
                         <svg class="slds-button__icon slds-button__icon_large" aria-hidden="true">
                             <use xlink:href="include/LD/assets/icons/utility-sprite/svg/symbols.svg#close" xmlns:xlink="http://www.w3.org/1999/xlink" />
@@ -3096,71 +3096,74 @@ if (typeof(Storage) !== "undefined") {
                             </li>
                         </ul>
                         <div id="tab-default-1" class="slds-tabs_default__content slds-show slds-theme_shade slds-theme_alert-texture" role="tabpanel" aria-labelledby="tab-default-1__item">
-                            <div class="slds-form">
-                                <fieldset class="slds-form-element slds-form_compound">
-                                    <div class="slds-form-element__control">
-                                        <div class="slds-form-element__group">
-                                            <div class="slds-form-element__row">
-                                                <div class="slds-form-element slds-size_2-of-12 slds-p-left_x-small">
-                                                    <label class="slds-form-element__label" for="input-02">Website</label>
-                                                    <div class="slds-form-element__control">
-                                                        <input type="text" id="input-02" class="slds-input" />
-                                                    </div>                                                
+                            <div class="slds-form slds-form_horizontal">
+                                <!-- Form row -->
+                                <div class="slds-grid slds-gutters_small">
+                                    <div class="slds-col slds-has-flexi-truncate slds-grid">
+                                        <div class="slds-form-element slds-p-horizontal_small">
+                                            <label class="slds-form-element__label">Website</label>
+                                            <div class="slds-form-element__control slds-grid">
+                                                <div class="slds-checkbox_add-button slds-col slds-p-right_xxx-small">
+                                                    <input class="slds-assistive-text" type="checkbox" id="add-checkbox-2" value="add-checkbox-2" />
+                                                    <label for="add-checkbox-2" class="slds-checkbox_faux">
+                                                        <span class="slds-assistive-text">Edit website</span>
+                                                    </label>
                                                 </div>
-                                                <div class="slds-form-element slds-size_1-of-12">
-                                                    <div class="slds-checkbox_add-button slds-is-absolute" style="left: 0.25rem; bottom: 0;">
-                                                        <input class="slds-assistive-text" type="checkbox" id="add-checkbox-4" value="add-checkbox-4" />
-                                                        <label for="add-checkbox-4" class="slds-checkbox_faux">
-                                                            <span class="slds-assistive-text">Add product</span>
-                                                        </label>
-                                                    </div>
+                                                <input type="text" name="" class="slds-input slds-col" />
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element slds-p-horizontal_small">
+                                            <label class="slds-form-element__label">Website</label>
+                                            <div class="slds-form-element__control slds-grid">
+                                                <div class="slds-checkbox_add-button slds-col slds-p-right_xxx-small">
+                                                    <input class="slds-assistive-text" type="checkbox" id="add-checkbox-2" value="add-checkbox-2" />
+                                                    <label for="add-checkbox-2" class="slds-checkbox_faux">
+                                                        <span class="slds-assistive-text">Edit website</span>
+                                                    </label>
                                                 </div>
-                                                <div class="slds-form-element slds-size_2-of-12 slds-p-left_x-small">
-                                                    <label class="slds-form-element__label" for="input-02">Phone</label>
-                                                    <div class="slds-form-element__control">
-                                                        <input type="text" id="input-02" class="slds-input" />
-                                                    </div>                                                
-                                                </div>
-                                                <div class="slds-form-element slds-size_1-of-12">
-                                                    <div class="slds-checkbox_add-button slds-is-absolute" style="left: 0.25rem; bottom: 0;">
-                                                        <input class="slds-assistive-text" type="checkbox" id="add-checkbox-4" value="add-checkbox-4" />
-                                                        <label for="add-checkbox-4" class="slds-checkbox_faux">
-                                                            <span class="slds-assistive-text">Add product</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="slds-form-element slds-size_2-of-12 slds-p-left_x-small">
-                                                    <label class="slds-form-element__label" for="input-02">Ticker</label>
-                                                    <div class="slds-form-element__control">
-                                                        <input type="text" id="input-02" class="slds-input" />
-                                                    </div>                                                
-                                                </div>
-                                                <div class="slds-form-element slds-size_1-of-12">
-                                                    <div class="slds-checkbox_add-button slds-is-absolute" style="left: 0.25rem; bottom: 0;">
-                                                        <input class="slds-assistive-text" type="checkbox" id="add-checkbox-4" value="add-checkbox-4" />
-                                                        <label for="add-checkbox-4" class="slds-checkbox_faux">
-                                                            <span class="slds-assistive-text">Add product</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="slds-form-element slds-size_2-of-12 slds-p-left_x-small">
-                                                    <label class="slds-form-element__label" for="input-02">Fax</label>
-                                                    <div class="slds-form-element__control">
-                                                        <input type="text" id="input-02" class="slds-input" />
-                                                    </div>                                                
-                                                </div>
-                                                <div class="slds-form-element slds-size_1-of-12">
-                                                    <div class="slds-checkbox_add-button slds-is-absolute" style="left: 0.25rem; bottom: 0;">
-                                                        <input class="slds-assistive-text" type="checkbox" id="add-checkbox-4" value="add-checkbox-4" />
-                                                        <label for="add-checkbox-4" class="slds-checkbox_faux">
-                                                            <span class="slds-assistive-text">Add product</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
+                                                <input type="text" name="" class="slds-input slds-col" />
                                             </div>
                                         </div>
                                     </div>
-                                </fieldset>
+                                </div>
+                                <!-- // Form row -->
+                                 <!-- Form row -->
+                                <div class="slds-grid slds-gutters_small">
+                                    <div class="slds-col slds-has-flexi-truncate slds-grid">
+                                        <div class="slds-form-element slds-p-horizontal_small">
+                                            <label class="slds-form-element__label">Website</label>
+                                            <div class="slds-form-element__control slds-grid">
+                                                <div class="slds-checkbox_add-button slds-col slds-p-right_xxx-small">
+                                                    <input class="slds-assistive-text" type="checkbox" id="add-checkbox-2" value="add-checkbox-2" />
+                                                    <label for="add-checkbox-2" class="slds-checkbox_faux">
+                                                        <span class="slds-assistive-text">Edit website</span>
+                                                    </label>
+                                                </div>
+                                                <label class="slds-checkbox_toggle slds-col slds-grid">
+                                                    <input name="checkbox-toggle-2" type="checkbox" aria-describedby="checkbox-toggle-2" value="checkbox-toggle-2" />
+                                                    <span id="checkbox-toggle-2" class="slds-checkbox_faux_container" aria-live="assertive">
+                                                        <span class="slds-checkbox_faux"></span>
+                                                        <span class="slds-checkbox_on">Yes</span>
+                                                        <span class="slds-checkbox_off">No</span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="slds-form-element slds-p-horizontal_small">
+                                            <label class="slds-form-element__label">Website</label>
+                                            <div class="slds-form-element__control slds-grid">
+                                                <div class="slds-checkbox_add-button slds-col slds-p-right_xxx-small">
+                                                    <input class="slds-assistive-text" type="checkbox" id="add-checkbox-2" value="add-checkbox-2" />
+                                                    <label for="add-checkbox-2" class="slds-checkbox_faux">
+                                                        <span class="slds-assistive-text">Edit website</span>
+                                                    </label>
+                                                </div>
+                                                <input type="text" name="" class="slds-input slds-col" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- // Form row -->
                             </div>
                         </div>
                         <div id="tab-default-2" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="tab-default-2__item">Item Two Content</div>
