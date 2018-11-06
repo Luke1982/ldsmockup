@@ -247,6 +247,19 @@ a:hover {
 	-webkit-transition: opacity 150ms linear 50ms, z-index 0ms linear 0ms;
 }
 
+.cbds-advanced-search--inactive {
+	overflow: hidden;
+	opacity: 0;
+	height: 0;
+	transition: opacity 100ms linear 0ms, height 0ms linear 0ms;
+}
+
+.cbds-advanced-search--active {
+	opacity: 1;
+	height: auto;
+	transition: opacity 100ms linear 50ms, height 0ms linear 0ms;
+}
+
 /* ---- CBDS animations ---- */
 /* -- Source: animate.css */
 
